@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "w9EeWllVO/art2N4a0Sbl4hnYuIiicVXjsj9JcuUVKAT0HQUnX2g17wqOInwbjjpQFm6o5mZIAZ54M+xFH6d0w==",
+  "success": true,
+  "projectFilePath": "/Users/james.forster/Projects/gameOfLife/gameOfLife/gameOfLife.csproj",
+  "expectedPackageFiles": [
+    "/Users/james.forster/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.8/microsoft.aspnetcore.app.ref.3.1.8.nupkg.sha512"
+  ],
+  "logs": []
+}
