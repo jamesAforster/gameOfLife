@@ -4,9 +4,13 @@ using System.Linq;
 namespace gameOfLife
 {
     public class Game
-    { 
-    public int[][] grid;
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
 
+        public int[][] grid;
         public Game(int[][] inputGrid)
         {
             grid = inputGrid;
@@ -15,145 +19,56 @@ namespace gameOfLife
         public int[][] newGrid()
         {
             int[][] emptyGrid = new int[4][];
-            emptyGrid[0] = new int[] { 0, 0, 0, 0 };
-            emptyGrid[1] = new int[] { 0, 0, 0, 0 };
-            emptyGrid[2] = new int[] { 0, 0, 0, 0 };
-            emptyGrid[3] = new int[] { 0, 0, 0, 0 };
+            for (int i = 0; i < 4; i++)
+            {
+                emptyGrid[i] = Enumerable.Repeat(0, 4).ToArray();
+            }
             return emptyGrid;
         }
 
         public int[][] Step()
         {
             int[][] returnGrid = newGrid();
-            int rowIndex = 0;
-            foreach (int[] row in grid)
+
+            for (int arrayIndex = 0; arrayIndex < grid.Length; arrayIndex++)
             {
-                int elementIndex = 0;
-                foreach (int i in row)
+                int[] array = grid[arrayIndex];
+                for (int elementIndex = 0; elementIndex < array.Length; elementIndex++)
                 {
                     int count = 0;
-                        try
+                    for (int arrayCheck = -1; arrayCheck < 2; arrayCheck++)
+                    {
+                        for (int elementCheck = -1; elementCheck < 2; elementCheck++)
                         {
-                            if (row[elementIndex + 1] == 1)
+                            try
                             {
-                                count += 1;
+                                if (grid[arrayIndex + arrayCheck][elementIndex + elementCheck] == 1 && !(arrayCheck == 0 && elementCheck == 0))
+                                {
+                                    count++;
+                                }
+                            }
+                            catch (IndexOutOfRangeException)
+                            {
                             }
                         }
-                        catch
-                        {
-
-                        }
-                        try
-                        {
-                            if (row[elementIndex - 1] == 1)
-                            {
-                                count += 1;
-                            }
-                        }
-                        catch
-                        {
-
-                        }
-                        try
-                        {
-                            if (grid[rowIndex + 1][elementIndex] == 1)
-                            {
-                                count += 1;
-                            }
-
-                        }
-                        catch
-                        {
-
-                        }
-                        try
-                        {
-                            if (grid[rowIndex - 1][elementIndex] == 1)
-                            {
-                                count += 1;
-                            }
-                        }
-                        catch
-                        {
-
-                        }
-                        try
-                        {
-                            if (grid[rowIndex + 1][elementIndex + 1] == 1)
-                            {
-                                count += 1;
-                            }
-                        }
-                        catch
-                        {
-
-                        }
-                        try
-                        {
-                            if (grid[rowIndex + 1][elementIndex - 1] == 1)
-                            {
-                                count += 1;
-                            }
-
-                        }
-                        catch
-                        {
-
-                        }
-                        try
-                        {
-                            if (grid[rowIndex - 1][elementIndex + 1] == 1)
-                            {
-                                count += 1;
-                            }
-                        }
-                        catch
-                        {
-
-                        }
-                        try
-                        {
-                            if (grid[rowIndex - 1][elementIndex - 1] == 1)
-                            {
-                                count += 1;
-                            }
-                        }
-                        catch
-                        {
-
-                        }
-
-                        if (i == 1)
-                        {
-                            if (count < 2)
-                            {
-                                returnGrid[rowIndex][elementIndex] = 0;
-                            }
-                            else if (count == 2 || count == 3)
-                            {
-                                returnGrid[rowIndex][elementIndex] = 1;
-                            }
-                            if (count > 3)
-                            {
-                                returnGrid[rowIndex][elementIndex] = 0;
-                            }
-                        }
-                        if ( i == 0 )
-                        {
-                            if (count == 3)
-                            {
-                                returnGrid[rowIndex][elementIndex] = 1;
-                            }
-                        }
-                    elementIndex++;
+                    }
+                    int newValue;
+                    if (grid[arrayIndex][elementIndex] == 1 && count == 2 || count == 3)
+                    {
+                        newValue = 1;
+                    }
+                    else if (grid[arrayIndex][elementIndex] == 0 && count == 3)
+                    {
+                        newValue = 1;
+                    }
+                    else
+                    {
+                        newValue = 0;
+                    }
+                    returnGrid[arrayIndex][elementIndex] = newValue;
                 }
-                rowIndex++;
             }
             return returnGrid;
-        }
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
         }
     }
 }

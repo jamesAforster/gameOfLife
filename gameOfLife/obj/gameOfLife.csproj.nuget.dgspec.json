@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/james.forster/Projects/gameOfLife/gameOfLife/gameOfLife.csproj": {}
+    "/Users/james.forster/Projects/gameOfOriginal/gameOfLife/gameOfLife.csproj": {}
   },
   "projects": {
-    "/Users/james.forster/Projects/gameOfLife/gameOfLife/gameOfLife.csproj": {
+    "/Users/james.forster/Projects/gameOfOriginal/gameOfLife/gameOfLife.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/james.forster/Projects/gameOfLife/gameOfLife/gameOfLife.csproj",
+        "projectUniqueName": "/Users/james.forster/Projects/gameOfOriginal/gameOfLife/gameOfLife.csproj",
         "projectName": "gameOfLife",
-        "projectPath": "/Users/james.forster/Projects/gameOfLife/gameOfLife/gameOfLife.csproj",
+        "projectPath": "/Users/james.forster/Projects/gameOfOriginal/gameOfLife/gameOfLife.csproj",
         "packagesPath": "/Users/james.forster/.nuget/packages/",
-        "outputPath": "/Users/james.forster/Projects/gameOfLife/gameOfLife/obj/",
+        "outputPath": "/Users/james.forster/Projects/gameOfOriginal/gameOfLife/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/james.forster/.config/NuGet/NuGet.Config"

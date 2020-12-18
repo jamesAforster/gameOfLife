@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VoDgSEiENJ3NgOZScK2PBt3H+i103OdwWoRLUA/iJjJEmt2PHdVgFZ1MQ93dYeaVwuum3FWHHZxzcU8SoLR0ZA==",
+  "dgSpecHash": "0rrAzzUosr1VmqqKVW6tixDoZngAsJWShpe0pa12MXbPQa1lv8B/aa+VndiWIOs8Wv8WknYRm4A+p8ETuxNbzg==",
   "success": true,
-  "projectFilePath": "/Users/james.forster/Projects/gameOfLife/gameOfLifeTests/gameOfLifeTests.csproj",
+  "projectFilePath": "/Users/james.forster/Projects/gameOfOriginal/gameOfLifeTests/gameOfLifeTests.csproj",
   "expectedPackageFiles": [
     "/Users/james.forster/.nuget/packages/coverlet.collector/1.2.0/coverlet.collector.1.2.0.nupkg.sha512",
     "/Users/james.forster/.nuget/packages/microsoft.codecoverage/16.5.0/microsoft.codecoverage.16.5.0.nupkg.sha512",

@@ -27,7 +27,6 @@ namespace gameOfLifeTests
             int[][] expectedGrid = getEmptyGrid();
             Game game = new Game(expectedGrid);
             int[][] gameGrid = game.Step();
-
             CollectionAssert.AreEqual(expectedGrid[0], gameGrid[0]);
             CollectionAssert.AreEqual(expectedGrid[1], gameGrid[1]);
             CollectionAssert.AreEqual(expectedGrid[2], gameGrid[2]);
@@ -59,9 +58,29 @@ namespace gameOfLifeTests
             int[][] initialGrid = getEmptyGrid();
             initialGrid[1][1] = 1;
             initialGrid[1][2] = 1;
+            Console.WriteLine("Initial: ");
+            foreach (int[] row in initialGrid)
+            {
+                foreach (int i in row)
+                {
+                    Console.Write(i);
+                }
+                Console.WriteLine(" ");
+            }
+
 
             Game game = new Game(initialGrid);
             int[][] actualGrid = game.Step();
+
+            Console.WriteLine("Actual: ");
+            foreach (int[] row in actualGrid)
+            {
+                foreach (int i in row)
+                {
+                    Console.Write(i);
+                }
+                Console.WriteLine(" ");
+            }
 
             CollectionAssert.AreEqual(expectedGrid[0], actualGrid[0]);
             CollectionAssert.AreEqual(expectedGrid[1], actualGrid[1]);
@@ -86,13 +105,10 @@ namespace gameOfLifeTests
 
             Game game = new Game(initialGrid);
             int[][] actualGrid = game.Step();
-            Console.WriteLine("Row index 0: ");
+
             CollectionAssert.AreEqual(expectedGrid[0], actualGrid[0]);
-            Console.WriteLine("Row index 1: ");
             CollectionAssert.AreEqual(expectedGrid[1], actualGrid[1]);
-            Console.WriteLine("Row index 2: ");
             CollectionAssert.AreEqual(expectedGrid[2], actualGrid[2]);
-            Console.WriteLine("Row index 3: ");
             CollectionAssert.AreEqual(expectedGrid[3], actualGrid[3]);
         }
 
@@ -183,13 +199,6 @@ namespace gameOfLifeTests
             Game game = new Game(initialGrid);
             int[][] actualGrid = game.Step();
 
-            foreach (int[] row in  actualGrid)
-            {
-                foreach (int i in row)
-                {
-                    Console.WriteLine(i);
-                }
-            }
             CollectionAssert.AreEqual(expectedGrid[0], actualGrid[0]);
             CollectionAssert.AreEqual(expectedGrid[1], actualGrid[1]);
             CollectionAssert.AreEqual(expectedGrid[2], actualGrid[2]);

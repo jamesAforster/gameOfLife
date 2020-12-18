@@ -10,3 +10,15 @@
 /Users/james.forster/Projects/gameOfLife/gameOfLife/obj/Debug/netcoreapp3.1/gameOfLife.dll
 /Users/james.forster/Projects/gameOfLife/gameOfLife/obj/Debug/netcoreapp3.1/gameOfLife.pdb
 /Users/james.forster/Projects/gameOfLife/gameOfLife/obj/Debug/netcoreapp3.1/gameOfLife.genruntimeconfig.cache
+/Users/james.forster/Projects/gameOfOriginal/gameOfLife/bin/Debug/netcoreapp3.1/gameOfLife.deps.json
+/Users/james.forster/Projects/gameOfOriginal/gameOfLife/bin/Debug/netcoreapp3.1/gameOfLife.runtimeconfig.json
+/Users/james.forster/Projects/gameOfOriginal/gameOfLife/bin/Debug/netcoreapp3.1/gameOfLife.runtimeconfig.dev.json
+/Users/james.forster/Projects/gameOfOriginal/gameOfLife/bin/Debug/netcoreapp3.1/gameOfLife.dll
+/Users/james.forster/Projects/gameOfOriginal/gameOfLife/bin/Debug/netcoreapp3.1/gameOfLife.pdb
+/Users/james.forster/Projects/gameOfOriginal/gameOfLife/obj/Debug/netcoreapp3.1/gameOfLife.csprojAssemblyReference.cache
+/Users/james.forster/Projects/gameOfOriginal/gameOfLife/obj/Debug/netcoreapp3.1/gameOfLife.AssemblyInfoInputs.cache
+/Users/james.forster/Projects/gameOfOriginal/gameOfLife/obj/Debug/netcoreapp3.1/gameOfLife.AssemblyInfo.cs
+/Users/james.forster/Projects/gameOfOriginal/gameOfLife/obj/Debug/netcoreapp3.1/gameOfLife.csproj.CoreCompileInputs.cache
+/Users/james.forster/Projects/gameOfOriginal/gameOfLife/obj/Debug/netcoreapp3.1/gameOfLife.dll
+/Users/james.forster/Projects/gameOfOriginal/gameOfLife/obj/Debug/netcoreapp3.1/gameOfLife.pdb
+/Users/james.forster/Projects/gameOfOriginal/gameOfLife/obj/Debug/netcoreapp3.1/gameOfLife.genruntimeconfig.cache
