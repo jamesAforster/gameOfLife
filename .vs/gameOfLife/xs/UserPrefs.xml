@@ -1,7 +1,6 @@
 ﻿<Properties StartupConfiguration="{3240B2C2-0431-4945-8995-9FF7870BFD9C}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="gameOfLife/Game.cs">
     <Files>
-      <File FileName="gameOfLifeTests/GameOfLifeTests.cs" Line="1" Column="1" />
       <File FileName="gameOfLife/Game.cs" Line="1" Column="1" />
     </Files>
     <Pads>
@@ -17,15 +16,7 @@
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="gameOfLife" expanded="True">
-            <Node name="gameOfLifeTests" expanded="True">
-              <Node name="gameOfLifeTests" expanded="True">
-                <Node name="GameOfLifeTests" expanded="True">
-                  <Node name="TestMethod2" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
+          <Node name="gameOfLife" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
