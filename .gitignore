@@ -1,0 +1,6 @@
+/gameOfLife.sln
+.vs/
+/gameOfLife/bin/
+/gameOfLife/obj/
+/gameOfLifeTests/bin/
+/gameOfLifeTests/obj/
